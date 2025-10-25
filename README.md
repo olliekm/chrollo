@@ -1,2 +1,2 @@
-# chrollo
-Distributed hyperparameter tuning platform
+## **chrollo**
+### Distributed hyperparameter tuning platform
