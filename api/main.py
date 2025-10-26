@@ -1,5 +1,5 @@
 from fastapi import FastAPI, APIRouter
-from models import router as models_router
+from training import router as training_router
 
 app = FastAPI()
 
@@ -13,6 +13,6 @@ async def read_root():
 async def read_status():
     return {"status": "API is running"}
 
-v1_router.include_router(models_router)
+v1_router.include_router(training_router)
 
 app.include_router(v1_router)
